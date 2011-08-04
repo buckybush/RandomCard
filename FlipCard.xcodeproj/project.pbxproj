@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2B683913EAE82800AF18C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2B683813EAE82800AF18C8 /* UIKit.framework */; };
+		0F2B683B13EAE82800AF18C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2B683A13EAE82800AF18C8 /* Foundation.framework */; };
+		0F2B683D13EAE82800AF18C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2B683C13EAE82800AF18C8 /* CoreGraphics.framework */; };
+		0F2B684313EAE82800AF18C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B684113EAE82800AF18C8 /* InfoPlist.strings */; };
+		0F2B684513EAE82800AF18C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B684413EAE82800AF18C8 /* main.m */; };
+		0F2B684913EAE82800AF18C8 /* FlipCardAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B684813EAE82800AF18C8 /* FlipCardAppDelegate.m */; };
+		0F2B684C13EAE82800AF18C8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B684A13EAE82800AF18C8 /* MainWindow.xib */; };
+		0F2B684F13EAE82800AF18C8 /* FlipCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B684E13EAE82800AF18C8 /* FlipCardViewController.m */; };
+		0F2B685213EAE82800AF18C8 /* FlipCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B685013EAE82800AF18C8 /* FlipCardViewController.xib */; };
+		0F2B685A13EAE82900AF18C8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2B685913EAE82900AF18C8 /* SenTestingKit.framework */; };
+		0F2B685B13EAE82900AF18C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2B683813EAE82800AF18C8 /* UIKit.framework */; };
+		0F2B685C13EAE82900AF18C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2B683A13EAE82800AF18C8 /* Foundation.framework */; };
+		0F2B685D13EAE82900AF18C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2B683C13EAE82800AF18C8 /* CoreGraphics.framework */; };
+		0F2B686513EAE82900AF18C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B686313EAE82900AF18C8 /* InfoPlist.strings */; };
+		0F2B686713EAE82900AF18C8 /* FlipCardTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 0F2B686613EAE82900AF18C8 /* FlipCardTests.h */; };
+		0F2B686913EAE82900AF18C8 /* FlipCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B686813EAE82900AF18C8 /* FlipCardTests.m */; };
+		0FD126D113EAF49100E5642C /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD126D013EAF49100E5642C /* CardView.m */; };
+		0FD126D813EAF4E300E5642C /* CardFlippedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD126D713EAF4E300E5642C /* CardFlippedView.m */; };
+		0FE96BF113EB0E8900DCD59E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BF013EB0E8900DCD59E /* back.png */; };
+		0FE96C2213EB1C7C00DCD59E /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BF513EB1C7C00DCD59E /* 8.png */; };
+		0FE96C2313EB1C7C00DCD59E /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BF613EB1C7C00DCD59E /* 9.png */; };
+		0FE96C2413EB1C7C00DCD59E /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BF713EB1C7C00DCD59E /* 10.png */; };
+		0FE96C2513EB1C7C00DCD59E /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BF813EB1C7C00DCD59E /* 11.png */; };
+		0FE96C2613EB1C7C00DCD59E /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BF913EB1C7C00DCD59E /* 12.png */; };
+		0FE96C2713EB1C7C00DCD59E /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BFA13EB1C7C00DCD59E /* 13.png */; };
+		0FE96C2813EB1C7C00DCD59E /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BFB13EB1C7C00DCD59E /* 14.png */; };
+		0FE96C2913EB1C7C00DCD59E /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BFC13EB1C7C00DCD59E /* 15.png */; };
+		0FE96C2A13EB1C7C00DCD59E /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BFD13EB1C7C00DCD59E /* 16.png */; };
+		0FE96C2B13EB1C7C00DCD59E /* 17.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BFE13EB1C7C00DCD59E /* 17.png */; };
+		0FE96C2C13EB1C7C00DCD59E /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96BFF13EB1C7C00DCD59E /* 18.png */; };
+		0FE96C2D13EB1C7C00DCD59E /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0013EB1C7C00DCD59E /* 19.png */; };
+		0FE96C2E13EB1C7C00DCD59E /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0113EB1C7C00DCD59E /* 20.png */; };
+		0FE96C2F13EB1C7C00DCD59E /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0213EB1C7C00DCD59E /* 21.png */; };
+		0FE96C3013EB1C7C00DCD59E /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0313EB1C7C00DCD59E /* 22.png */; };
+		0FE96C3113EB1C7C00DCD59E /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0413EB1C7C00DCD59E /* 23.png */; };
+		0FE96C3213EB1C7C00DCD59E /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0513EB1C7C00DCD59E /* 24.png */; };
+		0FE96C3313EB1C7C00DCD59E /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0613EB1C7C00DCD59E /* 25.png */; };
+		0FE96C3413EB1C7C00DCD59E /* 26.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0713EB1C7C00DCD59E /* 26.png */; };
+		0FE96C3513EB1C7C00DCD59E /* 27.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0813EB1C7C00DCD59E /* 27.png */; };
+		0FE96C3613EB1C7C00DCD59E /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0913EB1C7C00DCD59E /* 28.png */; };
+		0FE96C3713EB1C7C00DCD59E /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0A13EB1C7C00DCD59E /* 29.png */; };
+		0FE96C3813EB1C7C00DCD59E /* 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0B13EB1C7C00DCD59E /* 30.png */; };
+		0FE96C3913EB1C7C00DCD59E /* 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0C13EB1C7C00DCD59E /* 31.png */; };
+		0FE96C3A13EB1C7C00DCD59E /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0D13EB1C7C00DCD59E /* 32.png */; };
+		0FE96C3B13EB1C7C00DCD59E /* 33.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0E13EB1C7C00DCD59E /* 33.png */; };
+		0FE96C3C13EB1C7C00DCD59E /* 34.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C0F13EB1C7C00DCD59E /* 34.png */; };
+		0FE96C3D13EB1C7C00DCD59E /* 35.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1013EB1C7C00DCD59E /* 35.png */; };
+		0FE96C3E13EB1C7C00DCD59E /* 36.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1113EB1C7C00DCD59E /* 36.png */; };
+		0FE96C3F13EB1C7C00DCD59E /* 37.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1213EB1C7C00DCD59E /* 37.png */; };
+		0FE96C4013EB1C7C00DCD59E /* 38.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1313EB1C7C00DCD59E /* 38.png */; };
+		0FE96C4113EB1C7C00DCD59E /* 39.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1413EB1C7C00DCD59E /* 39.png */; };
+		0FE96C4213EB1C7C00DCD59E /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1513EB1C7C00DCD59E /* 40.png */; };
+		0FE96C4313EB1C7C00DCD59E /* 41.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1613EB1C7C00DCD59E /* 41.png */; };
+		0FE96C4413EB1C7C00DCD59E /* 42.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1713EB1C7C00DCD59E /* 42.png */; };
+		0FE96C4513EB1C7C00DCD59E /* 43.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1813EB1C7C00DCD59E /* 43.png */; };
+		0FE96C4613EB1C7C00DCD59E /* 44.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1913EB1C7C00DCD59E /* 44.png */; };
+		0FE96C4713EB1C7C00DCD59E /* 45.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1A13EB1C7C00DCD59E /* 45.png */; };
+		0FE96C4813EB1C7C00DCD59E /* 46.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1B13EB1C7C00DCD59E /* 46.png */; };
+		0FE96C4913EB1C7C00DCD59E /* 47.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1C13EB1C7C00DCD59E /* 47.png */; };
+		0FE96C4A13EB1C7C00DCD59E /* 48.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1D13EB1C7C00DCD59E /* 48.png */; };
+		0FE96C4B13EB1C7C00DCD59E /* 49.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1E13EB1C7C00DCD59E /* 49.png */; };
+		0FE96C4C13EB1C7C00DCD59E /* 50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C1F13EB1C7C00DCD59E /* 50.png */; };
+		0FE96C4D13EB1C7C00DCD59E /* 51.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C2013EB1C7C00DCD59E /* 51.png */; };
+		0FE96C4E13EB1C7C00DCD59E /* 52.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C2113EB1C7C00DCD59E /* 52.png */; };
+		0FE96C5613EB1C8B00DCD59E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C4F13EB1C8A00DCD59E /* 1.png */; };
+		0FE96C5713EB1C8B00DCD59E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C5013EB1C8B00DCD59E /* 2.png */; };
+		0FE96C5813EB1C8B00DCD59E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C5113EB1C8B00DCD59E /* 3.png */; };
+		0FE96C5913EB1C8B00DCD59E /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C5213EB1C8B00DCD59E /* 4.png */; };
+		0FE96C5A13EB1C8B00DCD59E /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C5313EB1C8B00DCD59E /* 5.png */; };
+		0FE96C5B13EB1C8B00DCD59E /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C5413EB1C8B00DCD59E /* 6.png */; };
+		0FE96C5C13EB1C8B00DCD59E /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FE96C5513EB1C8B00DCD59E /* 7.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F2B685E13EAE82900AF18C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F2B682B13EAE82800AF18C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F2B683313EAE82800AF18C8;
+			remoteInfo = FlipCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F2B683413EAE82800AF18C8 /* FlipCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2B683813EAE82800AF18C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F2B683A13EAE82800AF18C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F2B683C13EAE82800AF18C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F2B684013EAE82800AF18C8 /* FlipCard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlipCard-Info.plist"; sourceTree = "<group>"; };
+		0F2B684213EAE82800AF18C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F2B684413EAE82800AF18C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F2B684613EAE82800AF18C8 /* FlipCard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlipCard-Prefix.pch"; sourceTree = "<group>"; };
+		0F2B684713EAE82800AF18C8 /* FlipCardAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipCardAppDelegate.h; sourceTree = "<group>"; };
+		0F2B684813EAE82800AF18C8 /* FlipCardAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipCardAppDelegate.m; sourceTree = "<group>"; };
+		0F2B684B13EAE82800AF18C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0F2B684D13EAE82800AF18C8 /* FlipCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipCardViewController.h; sourceTree = "<group>"; };
+		0F2B684E13EAE82800AF18C8 /* FlipCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipCardViewController.m; sourceTree = "<group>"; };
+		0F2B685113EAE82800AF18C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipCardViewController.xib; sourceTree = "<group>"; };
+		0F2B685813EAE82900AF18C8 /* FlipCardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipCardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2B685913EAE82900AF18C8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0F2B686213EAE82900AF18C8 /* FlipCardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlipCardTests-Info.plist"; sourceTree = "<group>"; };
+		0F2B686413EAE82900AF18C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F2B686613EAE82900AF18C8 /* FlipCardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipCardTests.h; sourceTree = "<group>"; };
+		0F2B686813EAE82900AF18C8 /* FlipCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipCardTests.m; sourceTree = "<group>"; };
+		0FD126CF13EAF49100E5642C /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		0FD126D013EAF49100E5642C /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		0FD126D613EAF4E300E5642C /* CardFlippedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardFlippedView.h; sourceTree = "<group>"; };
+		0FD126D713EAF4E300E5642C /* CardFlippedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardFlippedView.m; sourceTree = "<group>"; };
+		0FE96BF013EB0E8900DCD59E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		0FE96BF513EB1C7C00DCD59E /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		0FE96BF613EB1C7C00DCD59E /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		0FE96BF713EB1C7C00DCD59E /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		0FE96BF813EB1C7C00DCD59E /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		0FE96BF913EB1C7C00DCD59E /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		0FE96BFA13EB1C7C00DCD59E /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		0FE96BFB13EB1C7C00DCD59E /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		0FE96BFC13EB1C7C00DCD59E /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		0FE96BFD13EB1C7C00DCD59E /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		0FE96BFE13EB1C7C00DCD59E /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		0FE96BFF13EB1C7C00DCD59E /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		0FE96C0013EB1C7C00DCD59E /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
+		0FE96C0113EB1C7C00DCD59E /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		0FE96C0213EB1C7C00DCD59E /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		0FE96C0313EB1C7C00DCD59E /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		0FE96C0413EB1C7C00DCD59E /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		0FE96C0513EB1C7C00DCD59E /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		0FE96C0613EB1C7C00DCD59E /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		0FE96C0713EB1C7C00DCD59E /* 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26.png; sourceTree = "<group>"; };
+		0FE96C0813EB1C7C00DCD59E /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 27.png; sourceTree = "<group>"; };
+		0FE96C0913EB1C7C00DCD59E /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28.png; sourceTree = "<group>"; };
+		0FE96C0A13EB1C7C00DCD59E /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		0FE96C0B13EB1C7C00DCD59E /* 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30.png; sourceTree = "<group>"; };
+		0FE96C0C13EB1C7C00DCD59E /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 31.png; sourceTree = "<group>"; };
+		0FE96C0D13EB1C7C00DCD59E /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		0FE96C0E13EB1C7C00DCD59E /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33.png; sourceTree = "<group>"; };
+		0FE96C0F13EB1C7C00DCD59E /* 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 34.png; sourceTree = "<group>"; };
+		0FE96C1013EB1C7C00DCD59E /* 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 35.png; sourceTree = "<group>"; };
+		0FE96C1113EB1C7C00DCD59E /* 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36.png; sourceTree = "<group>"; };
+		0FE96C1213EB1C7C00DCD59E /* 37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 37.png; sourceTree = "<group>"; };
+		0FE96C1313EB1C7C00DCD59E /* 38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 38.png; sourceTree = "<group>"; };
+		0FE96C1413EB1C7C00DCD59E /* 39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 39.png; sourceTree = "<group>"; };
+		0FE96C1513EB1C7C00DCD59E /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40.png; sourceTree = "<group>"; };
+		0FE96C1613EB1C7C00DCD59E /* 41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 41.png; sourceTree = "<group>"; };
+		0FE96C1713EB1C7C00DCD59E /* 42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 42.png; sourceTree = "<group>"; };
+		0FE96C1813EB1C7C00DCD59E /* 43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 43.png; sourceTree = "<group>"; };
+		0FE96C1913EB1C7C00DCD59E /* 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 44.png; sourceTree = "<group>"; };
+		0FE96C1A13EB1C7C00DCD59E /* 45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 45.png; sourceTree = "<group>"; };
+		0FE96C1B13EB1C7C00DCD59E /* 46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 46.png; sourceTree = "<group>"; };
+		0FE96C1C13EB1C7C00DCD59E /* 47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 47.png; sourceTree = "<group>"; };
+		0FE96C1D13EB1C7C00DCD59E /* 48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 48.png; sourceTree = "<group>"; };
+		0FE96C1E13EB1C7C00DCD59E /* 49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 49.png; sourceTree = "<group>"; };
+		0FE96C1F13EB1C7C00DCD59E /* 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50.png; sourceTree = "<group>"; };
+		0FE96C2013EB1C7C00DCD59E /* 51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 51.png; sourceTree = "<group>"; };
+		0FE96C2113EB1C7C00DCD59E /* 52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 52.png; sourceTree = "<group>"; };
+		0FE96C4F13EB1C8A00DCD59E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		0FE96C5013EB1C8B00DCD59E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		0FE96C5113EB1C8B00DCD59E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		0FE96C5213EB1C8B00DCD59E /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		0FE96C5313EB1C8B00DCD59E /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		0FE96C5413EB1C8B00DCD59E /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		0FE96C5513EB1C8B00DCD59E /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F2B683113EAE82800AF18C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2B683913EAE82800AF18C8 /* UIKit.framework in Frameworks */,
+				0F2B683B13EAE82800AF18C8 /* Foundation.framework in Frameworks */,
+				0F2B683D13EAE82800AF18C8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2B685413EAE82900AF18C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2B685A13EAE82900AF18C8 /* SenTestingKit.framework in Frameworks */,
+				0F2B685B13EAE82900AF18C8 /* UIKit.framework in Frameworks */,
+				0F2B685C13EAE82900AF18C8 /* Foundation.framework in Frameworks */,
+				0F2B685D13EAE82900AF18C8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2B682913EAE82800AF18C8 = {
+			isa = PBXGroup;
+			children = (
+				0F2B683E13EAE82800AF18C8 /* FlipCard */,
+				0F2B687213EAE9C100AF18C8 /* cards */,
+				0F2B686013EAE82900AF18C8 /* FlipCardTests */,
+				0F2B683713EAE82800AF18C8 /* Frameworks */,
+				0F2B683513EAE82800AF18C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F2B683513EAE82800AF18C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B683413EAE82800AF18C8 /* FlipCard.app */,
+				0F2B685813EAE82900AF18C8 /* FlipCardTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F2B683713EAE82800AF18C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B683813EAE82800AF18C8 /* UIKit.framework */,
+				0F2B683A13EAE82800AF18C8 /* Foundation.framework */,
+				0F2B683C13EAE82800AF18C8 /* CoreGraphics.framework */,
+				0F2B685913EAE82900AF18C8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F2B683E13EAE82800AF18C8 /* FlipCard */ = {
+			isa = PBXGroup;
+			children = (
+				0FD126D413EAF4B200E5642C /* App Delegates */,
+				0FD126D313EAF49C00E5642C /* View Controllers */,
+				0FD126D513EAF4D000E5642C /* Views */,
+				0F2B684A13EAE82800AF18C8 /* MainWindow.xib */,
+				0F2B685013EAE82800AF18C8 /* FlipCardViewController.xib */,
+				0F2B683F13EAE82800AF18C8 /* Supporting Files */,
+			);
+			path = FlipCard;
+			sourceTree = "<group>";
+		};
+		0F2B683F13EAE82800AF18C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B684013EAE82800AF18C8 /* FlipCard-Info.plist */,
+				0F2B684113EAE82800AF18C8 /* InfoPlist.strings */,
+				0F2B684413EAE82800AF18C8 /* main.m */,
+				0F2B684613EAE82800AF18C8 /* FlipCard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F2B686013EAE82900AF18C8 /* FlipCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B686613EAE82900AF18C8 /* FlipCardTests.h */,
+				0F2B686813EAE82900AF18C8 /* FlipCardTests.m */,
+				0F2B686113EAE82900AF18C8 /* Supporting Files */,
+			);
+			path = FlipCardTests;
+			sourceTree = "<group>";
+		};
+		0F2B686113EAE82900AF18C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B686213EAE82900AF18C8 /* FlipCardTests-Info.plist */,
+				0F2B686313EAE82900AF18C8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F2B687213EAE9C100AF18C8 /* cards */ = {
+			isa = PBXGroup;
+			children = (
+				0FE96C4F13EB1C8A00DCD59E /* 1.png */,
+				0FE96C5013EB1C8B00DCD59E /* 2.png */,
+				0FE96C5113EB1C8B00DCD59E /* 3.png */,
+				0FE96C5213EB1C8B00DCD59E /* 4.png */,
+				0FE96C5313EB1C8B00DCD59E /* 5.png */,
+				0FE96C5413EB1C8B00DCD59E /* 6.png */,
+				0FE96C5513EB1C8B00DCD59E /* 7.png */,
+				0FE96BF513EB1C7C00DCD59E /* 8.png */,
+				0FE96BF613EB1C7C00DCD59E /* 9.png */,
+				0FE96BF713EB1C7C00DCD59E /* 10.png */,
+				0FE96BF813EB1C7C00DCD59E /* 11.png */,
+				0FE96BF913EB1C7C00DCD59E /* 12.png */,
+				0FE96BFA13EB1C7C00DCD59E /* 13.png */,
+				0FE96BFB13EB1C7C00DCD59E /* 14.png */,
+				0FE96BFC13EB1C7C00DCD59E /* 15.png */,
+				0FE96BFD13EB1C7C00DCD59E /* 16.png */,
+				0FE96BFE13EB1C7C00DCD59E /* 17.png */,
+				0FE96BFF13EB1C7C00DCD59E /* 18.png */,
+				0FE96C0013EB1C7C00DCD59E /* 19.png */,
+				0FE96C0113EB1C7C00DCD59E /* 20.png */,
+				0FE96C0213EB1C7C00DCD59E /* 21.png */,
+				0FE96C0313EB1C7C00DCD59E /* 22.png */,
+				0FE96C0413EB1C7C00DCD59E /* 23.png */,
+				0FE96C0513EB1C7C00DCD59E /* 24.png */,
+				0FE96C0613EB1C7C00DCD59E /* 25.png */,
+				0FE96C0713EB1C7C00DCD59E /* 26.png */,
+				0FE96C0813EB1C7C00DCD59E /* 27.png */,
+				0FE96C0913EB1C7C00DCD59E /* 28.png */,
+				0FE96C0A13EB1C7C00DCD59E /* 29.png */,
+				0FE96C0B13EB1C7C00DCD59E /* 30.png */,
+				0FE96C0C13EB1C7C00DCD59E /* 31.png */,
+				0FE96C0D13EB1C7C00DCD59E /* 32.png */,
+				0FE96C0E13EB1C7C00DCD59E /* 33.png */,
+				0FE96C0F13EB1C7C00DCD59E /* 34.png */,
+				0FE96C1013EB1C7C00DCD59E /* 35.png */,
+				0FE96C1113EB1C7C00DCD59E /* 36.png */,
+				0FE96C1213EB1C7C00DCD59E /* 37.png */,
+				0FE96C1313EB1C7C00DCD59E /* 38.png */,
+				0FE96C1413EB1C7C00DCD59E /* 39.png */,
+				0FE96C1513EB1C7C00DCD59E /* 40.png */,
+				0FE96C1613EB1C7C00DCD59E /* 41.png */,
+				0FE96C1713EB1C7C00DCD59E /* 42.png */,
+				0FE96C1813EB1C7C00DCD59E /* 43.png */,
+				0FE96C1913EB1C7C00DCD59E /* 44.png */,
+				0FE96C1A13EB1C7C00DCD59E /* 45.png */,
+				0FE96C1B13EB1C7C00DCD59E /* 46.png */,
+				0FE96C1C13EB1C7C00DCD59E /* 47.png */,
+				0FE96C1D13EB1C7C00DCD59E /* 48.png */,
+				0FE96C1E13EB1C7C00DCD59E /* 49.png */,
+				0FE96C1F13EB1C7C00DCD59E /* 50.png */,
+				0FE96C2013EB1C7C00DCD59E /* 51.png */,
+				0FE96C2113EB1C7C00DCD59E /* 52.png */,
+				0FE96BF013EB0E8900DCD59E /* back.png */,
+			);
+			name = cards;
+			path = FlipCard;
+			sourceTree = "<group>";
+		};
+		0FD126D313EAF49C00E5642C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B684D13EAE82800AF18C8 /* FlipCardViewController.h */,
+				0F2B684E13EAE82800AF18C8 /* FlipCardViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0FD126D413EAF4B200E5642C /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B684713EAE82800AF18C8 /* FlipCardAppDelegate.h */,
+				0F2B684813EAE82800AF18C8 /* FlipCardAppDelegate.m */,
+			);
+			name = "App Delegates";
+			sourceTree = "<group>";
+		};
+		0FD126D513EAF4D000E5642C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FD126CF13EAF49100E5642C /* CardView.h */,
+				0FD126D013EAF49100E5642C /* CardView.m */,
+				0FD126D613EAF4E300E5642C /* CardFlippedView.h */,
+				0FD126D713EAF4E300E5642C /* CardFlippedView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F2B683313EAE82800AF18C8 /* FlipCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F2B686C13EAE82900AF18C8 /* Build configuration list for PBXNativeTarget "FlipCard" */;
+			buildPhases = (
+				0F2B683013EAE82800AF18C8 /* Sources */,
+				0F2B683113EAE82800AF18C8 /* Frameworks */,
+				0F2B683213EAE82800AF18C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipCard;
+			productName = FlipCard;
+			productReference = 0F2B683413EAE82800AF18C8 /* FlipCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F2B685713EAE82900AF18C8 /* FlipCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F2B686F13EAE82900AF18C8 /* Build configuration list for PBXNativeTarget "FlipCardTests" */;
+			buildPhases = (
+				0F2B685313EAE82900AF18C8 /* Sources */,
+				0F2B685413EAE82900AF18C8 /* Frameworks */,
+				0F2B685513EAE82900AF18C8 /* Resources */,
+				0F2B685613EAE82900AF18C8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F2B685F13EAE82900AF18C8 /* PBXTargetDependency */,
+			);
+			name = FlipCardTests;
+			productName = FlipCardTests;
+			productReference = 0F2B685813EAE82900AF18C8 /* FlipCardTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F2B682B13EAE82800AF18C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Northwest GA RESA";
+			};
+			buildConfigurationList = 0F2B682E13EAE82800AF18C8 /* Build configuration list for PBXProject "FlipCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F2B682913EAE82800AF18C8;
+			productRefGroup = 0F2B683513EAE82800AF18C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F2B683313EAE82800AF18C8 /* FlipCard */,
+				0F2B685713EAE82900AF18C8 /* FlipCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F2B683213EAE82800AF18C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2B684313EAE82800AF18C8 /* InfoPlist.strings in Resources */,
+				0F2B684C13EAE82800AF18C8 /* MainWindow.xib in Resources */,
+				0F2B685213EAE82800AF18C8 /* FlipCardViewController.xib in Resources */,
+				0FE96BF113EB0E8900DCD59E /* back.png in Resources */,
+				0FE96C2213EB1C7C00DCD59E /* 8.png in Resources */,
+				0FE96C2313EB1C7C00DCD59E /* 9.png in Resources */,
+				0FE96C2413EB1C7C00DCD59E /* 10.png in Resources */,
+				0FE96C2513EB1C7C00DCD59E /* 11.png in Resources */,
+				0FE96C2613EB1C7C00DCD59E /* 12.png in Resources */,
+				0FE96C2713EB1C7C00DCD59E /* 13.png in Resources */,
+				0FE96C2813EB1C7C00DCD59E /* 14.png in Resources */,
+				0FE96C2913EB1C7C00DCD59E /* 15.png in Resources */,
+				0FE96C2A13EB1C7C00DCD59E /* 16.png in Resources */,
+				0FE96C2B13EB1C7C00DCD59E /* 17.png in Resources */,
+				0FE96C2C13EB1C7C00DCD59E /* 18.png in Resources */,
+				0FE96C2D13EB1C7C00DCD59E /* 19.png in Resources */,
+				0FE96C2E13EB1C7C00DCD59E /* 20.png in Resources */,
+				0FE96C2F13EB1C7C00DCD59E /* 21.png in Resources */,
+				0FE96C3013EB1C7C00DCD59E /* 22.png in Resources */,
+				0FE96C3113EB1C7C00DCD59E /* 23.png in Resources */,
+				0FE96C3213EB1C7C00DCD59E /* 24.png in Resources */,
+				0FE96C3313EB1C7C00DCD59E /* 25.png in Resources */,
+				0FE96C3413EB1C7C00DCD59E /* 26.png in Resources */,
+				0FE96C3513EB1C7C00DCD59E /* 27.png in Resources */,
+				0FE96C3613EB1C7C00DCD59E /* 28.png in Resources */,
+				0FE96C3713EB1C7C00DCD59E /* 29.png in Resources */,
+				0FE96C3813EB1C7C00DCD59E /* 30.png in Resources */,
+				0FE96C3913EB1C7C00DCD59E /* 31.png in Resources */,
+				0FE96C3A13EB1C7C00DCD59E /* 32.png in Resources */,
+				0FE96C3B13EB1C7C00DCD59E /* 33.png in Resources */,
+				0FE96C3C13EB1C7C00DCD59E /* 34.png in Resources */,
+				0FE96C3D13EB1C7C00DCD59E /* 35.png in Resources */,
+				0FE96C3E13EB1C7C00DCD59E /* 36.png in Resources */,
+				0FE96C3F13EB1C7C00DCD59E /* 37.png in Resources */,
+				0FE96C4013EB1C7C00DCD59E /* 38.png in Resources */,
+				0FE96C4113EB1C7C00DCD59E /* 39.png in Resources */,
+				0FE96C4213EB1C7C00DCD59E /* 40.png in Resources */,
+				0FE96C4313EB1C7C00DCD59E /* 41.png in Resources */,
+				0FE96C4413EB1C7C00DCD59E /* 42.png in Resources */,
+				0FE96C4513EB1C7C00DCD59E /* 43.png in Resources */,
+				0FE96C4613EB1C7C00DCD59E /* 44.png in Resources */,
+				0FE96C4713EB1C7C00DCD59E /* 45.png in Resources */,
+				0FE96C4813EB1C7C00DCD59E /* 46.png in Resources */,
+				0FE96C4913EB1C7C00DCD59E /* 47.png in Resources */,
+				0FE96C4A13EB1C7C00DCD59E /* 48.png in Resources */,
+				0FE96C4B13EB1C7C00DCD59E /* 49.png in Resources */,
+				0FE96C4C13EB1C7C00DCD59E /* 50.png in Resources */,
+				0FE96C4D13EB1C7C00DCD59E /* 51.png in Resources */,
+				0FE96C4E13EB1C7C00DCD59E /* 52.png in Resources */,
+				0FE96C5613EB1C8B00DCD59E /* 1.png in Resources */,
+				0FE96C5713EB1C8B00DCD59E /* 2.png in Resources */,
+				0FE96C5813EB1C8B00DCD59E /* 3.png in Resources */,
+				0FE96C5913EB1C8B00DCD59E /* 4.png in Resources */,
+				0FE96C5A13EB1C8B00DCD59E /* 5.png in Resources */,
+				0FE96C5B13EB1C8B00DCD59E /* 6.png in Resources */,
+				0FE96C5C13EB1C8B00DCD59E /* 7.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2B685513EAE82900AF18C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2B686513EAE82900AF18C8 /* InfoPlist.strings in Resources */,
+				0F2B686713EAE82900AF18C8 /* FlipCardTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F2B685613EAE82900AF18C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F2B683013EAE82800AF18C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2B684513EAE82800AF18C8 /* main.m in Sources */,
+				0F2B684913EAE82800AF18C8 /* FlipCardAppDelegate.m in Sources */,
+				0F2B684F13EAE82800AF18C8 /* FlipCardViewController.m in Sources */,
+				0FD126D113EAF49100E5642C /* CardView.m in Sources */,
+				0FD126D813EAF4E300E5642C /* CardFlippedView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2B685313EAE82900AF18C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2B686913EAE82900AF18C8 /* FlipCardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F2B685F13EAE82900AF18C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F2B683313EAE82800AF18C8 /* FlipCard */;
+			targetProxy = 0F2B685E13EAE82900AF18C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0F2B684113EAE82800AF18C8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F2B684213EAE82800AF18C8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F2B684A13EAE82800AF18C8 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F2B684B13EAE82800AF18C8 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0F2B685013EAE82800AF18C8 /* FlipCardViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F2B685113EAE82800AF18C8 /* en */,
+			);
+			name = FlipCardViewController.xib;
+			sourceTree = "<group>";
+		};
+		0F2B686313EAE82900AF18C8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F2B686413EAE82900AF18C8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F2B686A13EAE82900AF18C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F2B686B13EAE82900AF18C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F2B686D13EAE82900AF18C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipCard/FlipCard-Prefix.pch";
+				INFOPLIST_FILE = "FlipCard/FlipCard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F2B686E13EAE82900AF18C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipCard/FlipCard-Prefix.pch";
+				INFOPLIST_FILE = "FlipCard/FlipCard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0F2B687013EAE82900AF18C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlipCard.app/FlipCard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipCard/FlipCard-Prefix.pch";
+				INFOPLIST_FILE = "FlipCardTests/FlipCardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0F2B687113EAE82900AF18C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlipCard.app/FlipCard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipCard/FlipCard-Prefix.pch";
+				INFOPLIST_FILE = "FlipCardTests/FlipCardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F2B682E13EAE82800AF18C8 /* Build configuration list for PBXProject "FlipCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2B686A13EAE82900AF18C8 /* Debug */,
+				0F2B686B13EAE82900AF18C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F2B686C13EAE82900AF18C8 /* Build configuration list for PBXNativeTarget "FlipCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2B686D13EAE82900AF18C8 /* Debug */,
+				0F2B686E13EAE82900AF18C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F2B686F13EAE82900AF18C8 /* Build configuration list for PBXNativeTarget "FlipCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2B687013EAE82900AF18C8 /* Debug */,
+				0F2B687113EAE82900AF18C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F2B682B13EAE82800AF18C8 /* Project object */;
+}
